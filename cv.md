@@ -1,6 +1,6 @@
 # Klishina Mary
 
-## UI/UX, graphic. digital designer
+UI/UX, graphic. digital designer
 
 ---
 
