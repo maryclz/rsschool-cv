@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RSSchool CV</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#1">Contact information</a></li>
+              <li class="nav__item"><a class="nav__link" href="#2">Skills and Proficiency</a></li>
+              <li class="nav__item"><a class="nav__link" href="#3">Courses</a></li>
+              <li class="nav__item"><a class="nav__link" href="#4">Code example</a></li>
+              <li class="nav__item"><a class="nav__link" href="#5">Languages</a></li>
+            </ul>
+          </nav>
+      </header>
+      <main class="main">
+        <br>
+        <h1>Klishina Mary</h1>
+        <p>UI/UX, graphic. digital designer</p>
+        <img src="images/my.jpg" width="300" height="300" alt="Photo CV" >
+        <br>
+        <h2 id="1">Contact information</h2>
+        <p><b>Phone:</b> <a href="+38 095 3856 689">+38 095 3856 689</a></p> 
+        <p><b>E-mail:</b> <a href="klishinamary@gmail.com">klishinamary@gmail.com</a></p> 
+        <p><b>Telegram:</b> <a href="@marie_kli">@marie_kli</a></p> 
+        <br>
+        <h2>Briefly About Myself</h2>
+        <p>
+          Good day! I am a web designer, UI / UX and graphic designer, I have
+          experience with raster and vector graphic editors for more than 2
+          years, I know the principles of preparing layouts for printing. I also
+          know how to draw by hand on a graphics tablet. I am looking for work
+          in a friendly and professional team to improve my design skills.
+        </p>
+        <br>
+        <h2 id="2">Skills and Proficiency</h2>
+        <ul>
+          <li>HTML5, CSS3</li> 
+          <li>Figma</li>
+          <li>Adobe Photoshop, Illustrator, InDesign, After Effects</li>
+        </ul>
+        <br>
+        <h2 id="3">Courses</h2>
+        - "UX / UI. Design and design of interfaces" from
+        <p>
+          <a href="https://cases.media/cert/UVDT5Q">Creative Practice</a
+          >(completed)
+        </p>
+        <br>
+        <h2 id="4">Code example</h2>
+        <pre>
+            $.each(_store.getModifiedRecords(), function(index, rec){
+                $.each(rec.modified, function(name){
+                    modifyData += '&values['+index+']['+name+']=' + rec.data[name];
+                });
+                modifyData += '&id['+index+']=' + rec.id;
+            });
+            if (modifyData == '') return;
+                $.getJSON('./modules/units/units.php?action=SET_FORMDATA&pharmId=
+                '+panel.container['form'].pharmId+'&projectId='+_param.projectId+'&stageId=
+                '+_param.stageId + modifyData +'&rnd='+Math.random(), function(data){
+                if (!data || !data.result){
+                    alert('ошибка сохранения, попробуйте еще раз');
+                    //_store.rejectChanges();
+                }else if (data.result == true){
+                    _store.commitChanges();
+                    panel.container['form'].loadData(panel.container['form'].pharmId);
+                }
+                $.unblockUI();
+            }.bind(this));
+        }
+    </pre>
+        <br>
+        <h2 id="5">Languages</h2>
+          <li>English - Intermediate</li>
+          <li>Russian - Native</li>
+          <li>Ukrainian - Native</li>
+        </ul>
+      </main>
+      <br>
+      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__block">
+                <a href="https://github.com/estydaven" target="_blank" class="footer__social"></a>
+            </div>
+            <div class="footer__block">
+                <div class="footer__text"><img src="images/logo.svg" class="footer__image" alt=""> <a href="https://rs.school/js/" class="footer__link">course</a> 2021</div>
+            </div>				
+            <div class="footer__block">
+                <a href="https://youtu.be/-rzCeWU_23k" target="_blank" class="footer__social footer__social_yt"></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+  </body>
+</html>
