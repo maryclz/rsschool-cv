@@ -1,0 +1,46 @@
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  gap: 60px;
+}
+.nav__item {
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer {
+  background-color: var(--light-gray);
+  padding: 10px 0;
+  text-align: center;
+}
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__block:nth-child(2) {
+  margin-right: 10px;
+}
+.footer__social {
+  background-image: url(../images/github.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.footer__text {
+  display: flex;
+  align-items: center;
+}
+.footer__image {
+  width: 70px;
+  margin: 0 10px;
+}
